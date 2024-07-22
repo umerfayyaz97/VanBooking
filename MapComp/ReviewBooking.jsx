@@ -1,8 +1,6 @@
 // ReviewBooking.js
 "use client";
-// import React from "react";
 import React, { useState } from "react";
-// import "tailwindcss/tailwind.css";
 
 import {
   FaArrowLeft,
@@ -95,13 +93,13 @@ const ReviewBooking = ({ setComponent }) => {
       </div>
       {/* Cancellation Policy */}
 
-      <div className="p-2 mb-4 rounded bg-customYellow">
+      <div className="p-2 mb-4 rounded bg-yellow-500/20">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="mb-1 text-sm font-semibold text-gray-700">
               Cancellation Policy
             </h2>
-            <p className="mb-2 text-xxxs">
+            <p className="mb-2 text-xs">
               Cancellations made seven days or less before a trip are not
               eligible for a refund
             </p>
@@ -179,7 +177,7 @@ const ReviewBooking = ({ setComponent }) => {
 
       <hr className="mb-4" />
 
-      <div className="p-2 mb-4 border border-yellow-200 rounded">
+      <div className="p-2 mb-4 border border-yellow-500 rounded">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="mb-1 text-sm font-semibold text-gray-700">

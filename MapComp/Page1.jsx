@@ -4,10 +4,7 @@ import axios from "axios";
 import Image from "next/image";
 import useStore from "../app/store/store";
 import SearchBox from "./SearchBox";
-// import { FaCalendarAlt, FaClock } from "react-icons/fa";
 import { FaTag, FaUser, FaInfoCircle } from "react-icons/fa";
-// import "tailwindcss";
-// import "tailwindcss/tailwind.css";
 
 const Page1 = ({ setComponent }) => {
   // Zustand store state and actions
@@ -285,7 +282,7 @@ const Page1 = ({ setComponent }) => {
           </div>
 
           {vehicleType && (
-            <div className="w-full p-1 mt-2 text-black border-yellow-600 rounded-md text-blackborder bg-yellow-500/20">
+            <div className="w-full p-1 mt-2 text-black border border-yellow-500 rounded-md text-blackborder bg-yellow-500/20">
               <p className="flex items-center justify-between font-bold rounded-t-lg text-md">
                 {vehicleDetails.cardDetails}
                 <Image
@@ -319,10 +316,10 @@ const Page1 = ({ setComponent }) => {
           )}
         </div>
         <div className="mb-4">
-          <p className="text-2xl font-bold text-gray-700">
+          <p className="text-2xl font-bold  text-gray-700">
             Additional Services
           </p>
-          <div className="p-2 mt-4 bg-gray-100 rounded-md">
+          <div className="p-2 mt-4 bg-gray-100 border border-gray-500 rounded-md">
             {options
               .slice(0, showAllOptions ? options.length : 3)
               .map((option, index) => (

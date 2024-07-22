@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import useStore from "../app/store/store";
-import { FaMinusCircle, FaPlusCircle, FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
+import { FaMinus } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa6";
 
 const Page2 = ({ setComponent }) => {
   const setOccasion = useStore((state) => state.setOccasion);
@@ -81,30 +83,30 @@ const Page2 = ({ setComponent }) => {
           )}
         </div>
 
-        <h2 className="mb-2 text-xl font-semibold text-gray-700">
+        <h2 className="mb-2  text-xl font-semibold text-gray-700">
           Specify Number of Passengers
         </h2>
         <p className="mb-2 text-sm">
           Kindly specify number of people travelling
         </p>
-        <div className="flex items-center mb-4 space-x-4">
+        <div className="flex items-center ml-6 mb-4 space-x-4">
           <button
             onClick={decrementPassengers}
-            className="text-gray-600 rounded-full focus:outline-none"
+            className="flex items-center justify-center w-10 h-10 text-black border-2 border-yellow-500 bg-white rounded-full"
           >
-            <FaMinusCircle className="w-6 h-6" />
+            <FaMinus />
           </button>
           <input
             type="number"
             value={passengers}
             onChange={handlePassengersChange}
-            className="w-20 p-2 text-center border border-gray-300 rounded"
+            className="w-20 p-2 text-center   rounded"
           />
           <button
             onClick={incrementPassengers}
-            className="text-gray-600 rounded-full focus:outline-none"
+            className="flex items-center justify-center w-10 h-10 text-black border-2 border-yellow-500 bg-yellow-500 rounded-full"
           >
-            <FaPlusCircle className="w-6 h-6 " />
+            <FaPlus />
           </button>
         </div>
 
@@ -145,7 +147,7 @@ const Page2 = ({ setComponent }) => {
         />
       </div>
       <div className="justify-center text-center bg-white">
-        <button className="p-2 px-4 font-bold text-black bg-customYellow w-80">
+        <button className="p-2 px-4 font-bold text-black bg-yellow-500/20 w-80">
           Total Price
         </button>
         <button
