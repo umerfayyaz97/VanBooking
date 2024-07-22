@@ -26,8 +26,38 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.scrollbar-yellow::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-yellow::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollbar-yellow::-webkit-scrollbar-thumb {
+  background-color: #facc15; /* Yellow */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+/* Firefox */
+.scrollbar-yellow {
+  scrollbar-width: thin;
+  scrollbar-color: #facc15 #f1f1f1;
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-attrib-inner {
+  display: none !important;
 }
