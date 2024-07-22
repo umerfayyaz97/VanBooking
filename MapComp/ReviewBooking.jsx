@@ -112,7 +112,7 @@ const ReviewBooking = ({ setComponent }) => {
           </button>
         </div>
         {showCancellationDetails && (
-          <div className="p-2 mt-2 border border-gray-300 rounded">
+          <div className="p-2 mt-2 rounded">
             <p className="text-xs">
               Cancellations made seven days or less before a trip are not
               eligible for a refund

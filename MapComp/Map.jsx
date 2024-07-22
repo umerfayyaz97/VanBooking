@@ -21,8 +21,8 @@ const Map = () => {
     });
 
     // Add navigation control (zoom buttons) to the top right corner
-    const nav = new mapboxgl.NavigationControl({ position: "top-right" });
-    mapRef.current.addControl(nav);
+    // const nav = new mapboxgl.NavigationControl({ position: "top-right" });
+    // mapRef.current.addControl(nav);
 
     // Remove Mapbox logo
     const logo = document.querySelector(".mapboxgl-ctrl-logo");

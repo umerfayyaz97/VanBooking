@@ -346,14 +346,14 @@ const Page1 = ({ setComponent }) => {
             {!showAllOptions ? (
               <button
                 onClick={toggleOptions}
-                className="w-full py-1 text-center text-black text-xxxs "
+                className="w-full py-1 text-center text-black text-xs "
               >
                 See all
               </button>
             ) : (
               <button
                 onClick={toggleOptions}
-                className="w-full py-1 text-center text-black text-xxxs "
+                className="w-full py-1 text-center text-black text-xs "
               >
                 Show Less
               </button>
